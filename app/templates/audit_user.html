@@ -1,0 +1,56 @@
+{% extends "header.html" %}
+
+
+{% block body %}
+                <!-- Page content-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="{{ url_for('user_management') }}">User Management</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Audit Mosaic Users</li>
+                    </ol>
+                  </nav>
+                <br>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Audit Mosaic Users ashoover</h1>
+                    <ol class="list-group list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Name</div>
+                          Adam Hoover
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mosaic Account Username</div>
+                          ashoover
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Last Login</div>
+                          12-20-21
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">2FA Setup</div>
+                          Yes
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Account Status</div>
+                          Enabled
+                        </div>
+                      </li>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">GitHub Account</div>
+                        Yes <br>
+                        ashoover-cx
+                      </div>
+                    </li>
+                    </ol>
+                </div>
+{% endblock %}

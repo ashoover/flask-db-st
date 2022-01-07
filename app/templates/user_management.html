@@ -1,0 +1,17 @@
+{% extends "header.html" %}
+
+
+{% block body %}
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">User Management</h1>
+                    <p>
+                        <div class="list-group">
+                            <a href="{{ url_for('add_user') }}" class="list-group-item list-group-item-action">Add New Mosaic User Acocunt</a>
+                            <a href="#" class="list-group-item list-group-item-action">Suspend Mosaic User Account</a>
+                            <a href="{{ url_for('audit_user') }}" class="list-group-item list-group-item-action">Audit Mosaic User Account</a>
+                            <a href="{{ url_for('all_users') }}" class="list-group-item list-group-item-action">All Users</a>
+                          </div>
+                    </p>
+                </div>
+{% endblock %} 
